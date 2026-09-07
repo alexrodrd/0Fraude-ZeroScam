@@ -16,6 +16,9 @@ class ReportViewController: UIViewController {
     @IBOutlet weak var otherPersonCityField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var anonymousSwitch: UISwitch!
+    @IBOutlet weak var evidenceImageView: UIImageView!
+    @IBOutlet weak var evidencePlaceholderStack: UIStackView!
+    @IBOutlet weak var evidenceRemoveButton: UIButton!
 
     private let card = UIColor(red: 18/255, green: 32/255, blue: 74/255, alpha: 1)
     private let selectedBg = UIColor(red: 26/255, green: 42/255, blue: 90/255, alpha: 1)
@@ -61,6 +64,14 @@ class ReportViewController: UIViewController {
     }
 
     @IBAction func anonymousToggled(_ sender: UISwitch) {
+    }
+
+    @IBAction func addEvidenceTapped(_ sender: Any) {
+        // TODO: agregar foto de evidencia
+    }
+
+    @IBAction func removeEvidenceTapped(_ sender: Any) {
+        // TODO: quitar foto de evidencia
     }
 
     @IBAction func submitTapped(_ sender: Any) {

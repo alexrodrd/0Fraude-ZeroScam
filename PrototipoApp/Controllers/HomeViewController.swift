@@ -22,15 +22,15 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func phishingCategoryTapped(_ sender: Any) {
-        openSearchTab(withQuery: "Phishing")
+        openSearchTab(withQuery: "Ofertas Falsas")
     }
 
     @IBAction func redesCategoryTapped(_ sender: Any) {
-        openSearchTab(withQuery: "Redes Sociales")
+        openSearchTab(withQuery: "Sorteos Falsos")
     }
 
     @IBAction func identidadCategoryTapped(_ sender: Any) {
-        openSearchTab(withQuery: "Robo de Identidad")
+        openSearchTab(withQuery: "Tiendas Clonadas")
     }
 
     private func openSearchTab(withQuery query: String) {

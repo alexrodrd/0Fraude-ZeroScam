@@ -16,4 +16,14 @@ class SettingsViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+
+    @IBAction func savedReportsTapped(_ sender: Any) {
+        guard let navigationController else { return }
+        guard let tabBarController = navigationController.viewControllers.first(where: { $0 is UITabBarController }) as? UITabBarController else { return }
+        if let profileVC = tabBarController.viewControllers?.compactMap({ $0 as? ProfileViewController }).first {
+            profileVC.showGuardados()
+        }
+        tabBarController.selectedIndex = 3
+        navigationController.popToViewController(tabBarController, animated: true)
+    }
 }

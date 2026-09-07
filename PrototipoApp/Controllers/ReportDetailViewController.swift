@@ -7,8 +7,11 @@ import UIKit
 
 class ReportDetailViewController: UIViewController {
 
+    @IBOutlet weak var commentField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        commentField.applyOfraudeStyle()
         hideKeyboardOnTap()
     }
 
@@ -23,6 +26,10 @@ class ReportDetailViewController: UIViewController {
 
     @IBAction func saveTapped(_ sender: Any) {
         // TODO: agregar a Reportes Guardados
+    }
+
+    @IBAction func shareTapped(_ sender: Any) {
+        // TODO: compartir reporte
     }
 
     @IBAction func postCommentTapped(_ sender: Any) {
